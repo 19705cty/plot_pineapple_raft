@@ -47,8 +47,8 @@ fig, ax = plt.subplots(figsize=(5, 2))
 positions = np.arange(len(columns))
 
 # Create bar charts representing the median values for each dataset.
-ax.bar(positions * 2, raft_medians, width=0.6, alpha=0.5, label='Raft')
-ax.bar(positions * 2 + 1, pineapple_medians, width=0.6, alpha=0.5, label='Pineapple')
+ax.bar(positions * 2, raft_medians, width=0.6, alpha=1, label='Raft')
+ax.bar(positions * 2 + 1, pineapple_medians, width=0.6, alpha=1, label='Pineapple')
 
 # Create box plots for each dataset.
 raftBox = ax.boxplot(raft_values, positions=positions * 2, widths=0.6, patch_artist=True, boxprops=dict(facecolor="blue"))
